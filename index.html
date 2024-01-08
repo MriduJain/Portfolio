@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="Document" />
+        <meta name="description" content="Your Description..." />
+        <title>Mridu Jain's Portfolio</title>
+        <link
+            rel="stylesheet"
+            href="resources/swiper js/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="resources/css/loader.css" />
+        <link rel="stylesheet" href="resources/css/hamburger.css" />
+        <link rel="stylesheet" href="resources/css/home.css" />
+        <link rel="stylesheet" href="resources/css/about.css" />
+        <link rel="stylesheet" href="resources/css/services.css">
+        <link rel="stylesheet" href="resources/css/portfolio.css" />
+        <link rel="stylesheet" href="resources/css/blog.css" />
+        <link rel="stylesheet" href="resources/css/contact.css" />
+        <link href="resources/mapbox-gl/mapbox-gl.css" rel="stylesheet" />
+        <link rel="stylesheet" href="resources/css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="resources/img/favicon.ico"
+            type="image/x-icon"
+        />
+    </head>
+    <body onload="loaded()">
+        <div class="loader">
+            <div class="c c1"></div>
+            <div class="c c2"></div>
+            <div class="c c3"></div>
+            <div class="c c4"></div>
+            <div class="c c5"></div>
+            <div class="c c6"></div>
+        </div>
+        <script>
+            let loader = document.querySelector(".loader");
+            function loaded() {
+                loader.classList.add("remove");
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 1000);
+            }
+        </script>
+        <!-- HAMBURGER MENU BUTTON (responsively visible) -->
+        <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        
+        </div>
+
+        <!-- THE REAL NAVIGATION -->
+        <nav class="navigation">
+            <h1>
+                Mridu Jain
+                <div></div>
+                <div></div>
+            </h1>
+            <ul>
+                <li><a href="#" onclick="home()">home</a></li>
+                <li>
+                    <a
+                        href="#"
+                        onclick="about(); animate3.play(); animate4.play();"
+                        >about</a
+                    >
+                </li>
+                <li><a href="#" onclick="services(); animate6.play();">services</a></li>
+                
+                <li><a href="#" onclick="blog()">blog</a></li>
+                <li>
+                    <a href="#" onclick="contact(); animate5.play()">contact</a>
+                </li>
+            </ul>
+            <p>&copy; 2023 Mridu.</p>
+        </nav>
+
+        <div class="container">
+            <div class="layer layer1 active">
+                <div class="home main">
+                    <div class="canvas_container">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content-for-home">
+                        <div class="img-container"></div>
+                        <h1 align="center">Mridu Jain</h1>
+                        <div class="social-icons">
+                                
+                            </div-->
+                            <div class="s-icon">
+                                <a href="#">
+                                    
+                                    <a class="fab fa-github" href="https://github.com/MriduJain" ></a>
+                                </a>
+                                <div class="s-name">GitHub</div>
+                            </div>
+                            <div class="s-icon">
+                                <a href="#">
+                                    <a class="fas fa-envelope" href = "mailto:mradu.9827@gmail.com?subject=Message from Portfolio Visitor"></a>
+                                </a>
+                                <div class="s-name">Email</div>
+                                <!--a class="fas fa-envelope" -->
+                            </div>
+                        </div>
+
+                        <div class="side-nav">
+                            <button
+                                onclick="about(); animate3.play(); animate4.play();"
+                            >
+                                <span class="w">W</span>
+                                <span class="tooltip"> why you? </span>
+                            </button>
+                            <button onclick="services(); animate6.play();">
+                                <span class="w">W</span>
+                                <span class="tooltip"> what do you do? </span>
+                            </button>
+                            <!--button onclick="portfolio()">
+                                <span class="w">W</span>
+                                <span class="tooltip">
+                                    what have you done?
+                                </span>
+                            </button-->
+                            <button onclick="blog()">
+                                <span class="w">W</span>
+                                <span class="tooltip"> what others say? </span>
+                            </button>
+                            <button onclick="contact(); animate5.play()">
+                                <span class="w">W</span>
+                                <span class="tooltip"> where are you? </span>
+                            </button>
+                        </div>
+
+                        <div class="titles-for-side-nav">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer2">
+                <div class="about main">
+                    <!-- SEGMENT FOR STYLING. -->
+                    <div class="styling">
+                        <div class="absolute box"></div>
+                        <div class="absolute circle"></div>
+                        <div class="absolute triangle"></div>
+                        <div class="absolute dots">
+                            <div class="dot dot1"></div>
+                            <div class="dot dot2"></div>
+                            <div class="dot dot3"></div>
+                            <div class="dot dot4"></div>
+                            <div class="dot dot5"></div>
+                            <div class="dot dot6"></div>
+                            <div class="dot dot7"></div>
+                            <div class="dot dot8"></div>
+                            <div class="dot dot9"></div>
+                            <div class="dot dot10"></div>
+                            <div class="dot dot11"></div>
+                            <div class="dot dot12"></div>
+                            <div class="dot dot13"></div>
+                            <div class="dot dot14"></div>
+                            <div class="dot dot15"></div>
+                            <div class="dot dot16"></div>
+                            <div class="dot dot17"></div>
+                            <div class="dot dot18"></div>
+                            <div class="dot dot19"></div>
+                            <div class="dot dot20"></div>
+                            <div class="dot dot21"></div>
+                            <div class="dot dot22"></div>
+                            <div class="dot dot23"></div>
+                            <div class="dot dot24"></div>
+                        </div>
+                        <svg
+                            class="wave absolute"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1450 320"
+                        >
+                            <path
+                                fill-opacity="1"
+                                d="M0,320L48,277.3C96,235,192,149,288,122.7C384,96,480,128,576,165.3C672,203,768,245,864,234.7C960,224,1056,160,1152,112C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                            ></path>
+                        </svg>
+
+                        <svg
+                            class="wave absolute opposite"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1450 320"
+                        >
+                            <path
+                                fill-opacity="1"
+                                d="M0,224L48,213.3C96,203,192,181,288,192C384,203,480,245,576,218.7C672,192,768,96,864,64C960,32,1056,64,1152,101.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                            ></path>
+                        </svg>
+                    </div>
+
+                    <!-- REAL CONTENT -->
+                    <div class="wrapper">
+                        <div class="face face2">
+                            <div class="content" style="text-align: center;">
+                                <p>Hello Visitor,</p>
+                                <h1>Welcome To Mridu's Profile Summary</h1>
+                                <p class="text" style="word-wrap: break-word; text-align: center; margin: 0 auto; max-width: 800px;">
+                                    A <span style="display: block; margin: 0 auto; width: fit-content;">Tech savvy engineer with distinguished proficiency in Splunk and DevOps, exemplifying over 4+ years of history marked by a positive impact on projects through meticulous attention to details and the orchestration of performance engineering tasks. An achievement-oriented professional, showcasing expertise in the nuanced realms of policies and procedure development, avant-garde technology implementation, and adept utilization of an array of tools. Committed to the delivery of sustainable and pioneering solutions, with a forte in upholding and enhancing company reputation, meticulous preparation of project status reports, and rigorous control of project plans.</span>
+                                </p>
+                                <a class="button download" href="resources/img/Mridu_CV2.pdf" download="Mridu_CV">Download CV</a>
+                                <a class="button hire" href="#" onclick="contact(); animate5.play()">Hire Me.</a>
+                            </div>
+                            <!--<div class="content" style="text-align: center;">
+                                <p>Hello Visitor,</p>
+                                <h1>Welcome To Mridu's Profile Summary</h1>
+                                <p class="text" style="word-wrap: break-word;">
+                                    A Tech savvy engineer with distinguished proficiency in Splunk and DevOps, exemplifying over 4+ years of history marked by a positive impact on projects through meticulous attention to details and the orchestration of performance engineering tasks. An achievement-oriented professional, showcasing expertise in the nuanced realms of policies and procedure development, avant-garde technology implementation, and adept utilization of an array of tools. Committed to the delivery of sustainable and pioneering solutions, with a forte in upholding and enhancing company reputation, meticulous preparation of project status reports, and rigorous control of project plans.
+                                </p>
+                                <a class="button download" href="resources/img/bg1.png" download="Mridu_CV">Download CV</a>
+                                <a class="button hire" href="#" onclick="contact(); animate5.play()">Hire Me.</a>
+                            </div>-->
+                        </div>
+                    </div>
+                    <!--<div class="wrapper">
+                        <div class="center-align">
+                            <div class="content">
+                                <p>Hello Visitor,</p>
+                                <h1>Welcome To Mridu's Profile Summary</h1>
+                                <p class="text">
+                                    A Tech savvy engineer with distinguished proficiency is in Splunk and DevOps, 
+                                    exemplifying over 4+ years of history marked by a positive impact on projects
+                                    through meticulous attention to details and the orchestration of performance 
+                                    engineering task. An Achievement-oriented professional, showcasing expertise 
+                                    in the nuanced realms of policies and procedure development, avant-garde 
+                                    technology implementation, and adept utilization of an array of tools.
+                                    Committed to the delivery of sustainable and pioneering solutions, with a 
+                                    forte in upholding and enhancing company reputation, meticulous preparation 
+                                    of project status reports, and rigorous control of project plans.
+                                </p>
+                                <a
+                                    class="button download"
+                                    href="resources/img/bg1.png"
+                                    download="Mridu_CV"
+                                    >Download CV</a
+                                >
+                                <a
+                                    class="button hire"
+                                    href="#"
+                                    class="hire"
+                                    onclick="contact(); animate5.play()"
+                                    >Hire Me.</a
+                                >
+                            </div>
+                        </div>
+                        <div class=""></div>
+                    </div>-->
+
+                    <!-- THE NAVIGATION OF ABOUT -->
+                    <nav class="about_nav">
+                        <ul>
+                            <li>
+                                <a class="active" href="#" data-text="one"
+                                    >Skills</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" data-text="two">Experience</a>
+                            </li>
+                            <li>
+                                <a href="#" data-text="three">Education</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="about_container">
+                        <!-- SKILL BOX -->
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="name">Splunk Engineer</div>
+                                <div class="value" style="left: 90%">90%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 90%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">DevOps</div>
+                                <div class="value" style="left: 75%">75%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 75%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">AWS Admin</div>
+                                <div class="value" style="left: 69%">60%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 69%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Deployment Release Manager</div>
+                                <div class="value" style="left: 69%">60%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 69%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Python Automation(Selenium)</div>
+                                <div class="value" style="left: 75%">75%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 75%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">SIEM/SOAR</div>
+                                <div class="value" style="left: 69%">60%</div>
+                                <div class="percent">
+                                    <div
+                                        class="progress"
+                                        style="width: 69%"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EXPERIENCE -->
+                        <div class="experience">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">April 2022 - Present</i>
+                                <h2>Senior Engineer - Applications Development</h2>
+                                <i class="name_company">Mercer Consulting PVT. LTD</i>
+                                <article class="text_hidden">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ut sint magnam ipsam
+                                    eveniet omnis nemo commodi dolorum neque
+                                    fugiat, soluta tempora vitae error magni.
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quaerat est amet
+                                    voluptatibus, nam perferendis provident
+                                    veritatis cum, dolorum eaque voluptates
+                                    asperiores, nostrum voluptatum. Autem
+                                    incidunt praesentium tempora, minus suscipit
+                                    fugiat?
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">Jan 2020 - March 2022</i>
+                                <h2>Trainee - Computer Applications</h2>
+                                <i class="name_company">Wipro Technologies</i>
+                                <article class="text_hidden">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ut sint magnam ipsam
+                                    eveniet omnis nemo commodi dolorum neque
+                                    fugiat, soluta tempora vitae error magni.
+                                </article>
+                            </div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">Aug 2019 - Jan 2020</i>
+                                <h2>Content Moderator/Contact Centre Associate</h2>
+                                <i class="name_company">WebHelp</i>
+                                <article class="text_hidden">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ut sint magnam ipsam
+                                    eveniet omnis nemo commodi dolorum neque
+                                    fugiat, soluta tempora vitae error magni.
+                                </article>
+                            </div>
+                            </div>
+                            <div class="education">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-reader"></i>
+                                <i class="date">2016 - 2019</i>
+                                <h2>Bachelor of Computer Applications</h2>
+                                <i class="name_company">GLA University.</i>
+                                <article class="text_hidden">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ut sint magnam ipsam
+                                    eveniet omnis nemo commodi dolorum neque
+                                    fugiat, soluta tempora vitae error magni.
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-reader"></i>
+                                <i class="date">2015 - 2016</i>
+                                <h2>Intermediate</h2>
+                                <i class="name_company">Simpkins School</i>
+                                <article class="text_hidden">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ut sint magnam ipsam
+                                    eveniet omnis nemo commodi dolorum neque
+                                    fugiat, soluta tempora vitae error magni.
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-open"></i>
+                                <i class="date">2013 - 2014</i>
+                                <h2>High School</h2>
+                                <i class="name_company">Milton Public School</i>
+                                <article class="text_hidden">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ut sint magnam ipsam
+                                    eveniet omnis nemo commodi dolorum neque
+                                    fugiat, soluta tempora vitae error magni.
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer3">
+                <div class="services main">
+                    <!-- <section class="background">
+                        <div class="bg_wrapper"></div>
+                    </section> -->
+
+                    <<style>
+                        .box-side {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 24px;
+                            font-weight: bold;
+                            animation: switchBox 4s infinite;
+                            }
+
+                            @keyframes switchBox {
+                                0% {
+                                    opacity: 1;
+                                }
+                                25% {
+                                    opacity: 1;
+                                }
+                                50% {
+                                     opacity: 1;
+                                }
+                                75% {
+                                    opacity: 1;
+                                }
+                                100% {
+                                    opacity: 1;
+                                }
+                            }
+                        </style>
+
+                        <div class="hero" style="text-align: center;">
+                            <span class="typography">
+                                <span class="t_dummy">I know how to</span> <br />
+                                <span class="t-box">
+                                    <span class="box-side box-front">Take Risks</span>
+                                    <span class="box-side box-top">Work with multiple Teams</span>
+                                    <span class="box-side box-back">Be Different</span>
+                                    <span class="box-side box-bottom">Be Innovative</span>
+                                </span>
+                            </span>
+                        </div>
+                    <!--<div class="hero" style="text-align: center;">
+                        <span class="typography">
+                            <span class="t_dummy">I know how to</span> <br />
+                            <span class="t-box">
+                                <span class="box-side box-front"
+                                    >take risk</span
+                                >
+                                <span class="box-side box-top"
+                                    >take a side</span
+                                >
+                                <span class="box-side box-back"
+                                    >be different</span
+                                >
+                                <span class="box-side box-bottom"
+                                    >be innovative</span
+                                >
+                            </span>
+                        </span>
+                    </div>-->
+                    <div class="capabilities left move-little-down">
+                        <img src="resources/img/elements/web_bg.png" alt="" />
+                        <p class="c_content">
+                            <span class="c_title">Splunk</span>
+                            Started my IT journey with Splunk. Tried and tested multiple
+                            features with own logics, I learned how to implement and maintain
+                            the arhitecture based on organisation level and worked hard to stay relevant in both
+                            fields. Working in both Admin and Developer fields have given me an experience of managing full tool
+                            even with every possible customisation required for projects/organisation.
+                            <br />
+                        </p>
+                    </div>
+                    <div class="capabilities right">
+                        <p class="c_content">
+                            <span class="c_title">DRM</span>
+                            With a Deployment Release Manager profile, I have worked
+                            with multiple types of project for implementing pipelines 
+                            and new codes into highly interactive experience by 
+                            paying close attention to details, requirements and performances.
+                            <br />
+                    </div>
+                    <!--div class="capabilities left">
+                        <img
+                            src="resources/img/elements/seo_bg.png"
+                            alt=""
+                            style="
+                                background: #2929292f;
+                                backdrop-filter: blur(4px);
+                                border-radius: 40px;
+                            "
+                        />
+
+                        <p class="c_content" style="word-wrap: break-word; text-align: left;">
+                            <span class="c_title">Python Automation(Selenium)</span>
+                            With 1+ years of experience in the Digital industry, he proved that
+                            the combination of strategic thinking and expertise will create a
+                            fascinating digital experience.
+                        <br />
+                        <a href="#">Learn More</a>
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                    </p>
+                    </div>-->
+                    <div class="capabilities left">
+                        <img
+                            src="resources/img/elements/seo_bg.png"
+                            alt=""
+                            style="
+                                background: #2929292f;
+                                backdrop-filter: blur(4px);
+                                border-radius: 40px;
+                            "
+                        />
+                    
+                        <p class="c_content">
+                            <span class="c_title">SIEM/SOAR</span>
+                            With 4+ years of experience in the SIEM/SOAR,
+                            I have a proven record that the combination of strategic thinking
+                            and expertise will create a fascinating secured & confidential
+                            environment with all compliant guidelines.
+                            <br />
+                            
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="layer layer4">
+                <div class="portfolio main">
+                    <div class="tip main">
+                        <div class="allContent">
+                            <div class="description" style="display: none">
+                                <div class="pro_intro">
+                                    <div class="nameplate">
+                                        
+                                    </div>
+                                    <div class="other_text">
+                                        
+                                    </div>
+                                </div>
+                                <div class="pro_info">
+                                    
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="closeButton">
+                                <span>Project Details</span>
+                                <div class="icon"></div>
+                            </button>
+                            <button class="exitButton">&times;</button>
+
+                            <div class="port_content">
+                                <div class="swiper-container-2">
+                                    <div class="swiper-wrapper">
+                                        
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-scrollbar"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="about_nav padding_top">
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                    <div class="mymixcont">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="layer layer5">
+                <div class="testimonial">
+                    <h1>
+                        <span>See What My Manager(s) Say about Me.</span>
+                    </h1>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="resources/img/Screenshot 2024-01-08 201327.png" alt="" />
+                                <h4>Neerav Mathur</h4>
+                                <h5>Manager at Mercer Consulting </h5>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Mridu is an excellent Splunk Engineer and
+                                    leader. He’s a pleasure to
+                                    work with, great value for timely tasks and will
+                                    always go the extra mile when necessary either with 
+                                    CyberSec or DevSecOps work as well.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/Screenshot 2024-01-08 201438.png" alt="" />
+                                <h4>Anjiah Goundla</h4>
+                                <h5>Manager at Wipro(Citibank Project)</h5>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Mridu is amazing in the DevOps work and doing great with
+                                    Splunk Admin/Developer work. He’s absolutely good choice 
+                                    with all the priority tasks and can work to keep the data 
+                                    and automations streamlined with all the required Technologies 
+                                    to work with and can quickly adapt with new learnings based 
+                                    on the project.
+                                    </thead>.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/Screenshot 2024-01-08 201207.png" alt="" />
+                                <h4>Priyanka Verma</h4>
+                                <h5>Manager From TikTok</h5>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Mridu is great with all the policies and guidelines for our platform and                          
+                                    been great with auditing and finding the appropriate content 
+                                    without single breach in last quarter
+                                    He values his work and always gives his best to 
+                                    inspire others team members as well.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer6">
+                <div class="contact_us">
+                    <div id="map"></div>
+                    <address class="info_container">
+                        <div class="info info1">
+                            <i class="fas fa-phone-alt"></i>
+                            <span class="iname">Phone</span>
+                            <a href="tel:+91-8534962686">+91-8534962686</a>
+                        </div>
+                        <div class="info info2">
+                            <i class="fas fa-home"></i>
+                            <span class="iname">Address</span>
+                            <a href="https://www.google.com/maps/place/Manas+Nagar,+Pandav+Nagar,+Shahganj,+Agra,+Uttar+Pradesh/data=!4m2!3m1!1s0x397477a7f831cd6d:0xee5d821e18f79d15?sa=X&ved=2ahUKEwidsbb2u6-DAxVcTmwGHTLNDTIQ8gF6BAgLEAA">
+                                <h3>19-B Harikripa Villa</h3>
+                                <span>Manas Nagar, Shahganj, Agra</span><br />
+                                <span>India</span>
+                            </a>
+                        </div>
+                        <div class="info info3">
+                            <i class="fas fa-envelope"></i>
+                            <span class="iname">Email</span>
+                            <a href="mailto:email1.gmail.com">mradu.9827@gmail.com</a>
+                            <a href="mailto:email2.gmail.com">mridu.jain009@gmail.com</a>
+                        </div>
+                    </address>
+                    <style>
+                        .info_container a {
+                            color: white;
+                        }
+                    </style>
+            
+                    <form action="#" method="post">
+                        <h6>Get In Touch</h6>
+                        <div class="inp_field">
+                            <i class="fas fa-user"></i>
+                            <input
+                                type="text"
+                                name="name"
+                                class="fname"
+                                id="fname"
+                                placeholder="Full Name"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-envelope"></i>
+                            <input
+                                type="email"
+                                name="email"
+                                class="email"
+                                id="email"
+                                placeholder="Email"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-angle-double-right"></i>
+                            <input
+                                type="text"
+                                name="subject"
+                                class="subject"
+                                id="subject"
+                                placeholder="Subject"
+                                required
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            cols="30"
+                            rows="5"
+                            class="message"
+                            id="message"
+                            placeholder="Message"
+                            required
+                        ></textarea>
+                        <button class="submit" id="submit">Submit
+                        <a class="submit" href = "mailto:mradu.9827@gmail.com?subject=Message from Portfolio Visitor"></a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!--<div class="layer layer6">
+                <div class="contact_us">
+                    <div id="map"></div>
+                    <address class="info_container">
+                        <div class="info info1">
+                            <i class="fas fa-phone-alt"></i>
+                            <span class="iname">Phone</span>
+                            <a href="tel:+91-8534962686">+91-8534962686</a>
+                        </div>
+                        <div class="info info2">
+                            <i class="fas fa-home"></i>
+                            <span class="iname">Address</span>
+                            <a
+                                href="https://www.google.com/maps/place/Manas+Nagar,+Pandav+Nagar,+Shahganj,+Agra,+Uttar+Pradesh/data=!4m2!3m1!1s0x397477a7f831cd6d:0xee5d821e18f79d15?sa=X&ved=2ahUKEwidsbb2u6-DAxVcTmwGHTLNDTIQ8gF6BAgLEAA"
+                            >         
+                                <h3>19-B Harikripa Villa</h3>
+                                <span>Manas Nagar, Shahganj, Agra</span><br />
+                                <span>India</span>
+                            </a>
+                        </div>
+                        <div class="info info3">
+                            <i class="fas fa-envelope"></i>
+                            <span class="iname">Email</span>
+                            <a href="mailto:email1.gmail.com"
+                                >mradu.9827@gmail.com</a
+                            >
+                            <a href="mailto:email2.gmail.com"
+                                >mridu.jain009@gmail.com</a
+                            >
+                        </div>
+                    </address>
+                    <style>
+                        .info_container a {
+                          color: white;
+                        }
+                      </style>
+
+                    <form action="#" method="post">
+                        <h1>Get In Touch</h1>
+                        <div class="inp_field">
+                            <i class="fas fa-user"></i>
+                            <input
+                                type="text"
+                                name="name"
+                                class="fname"
+                                id="fname"
+                                placeholder="Full Name"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-envelope"></i>
+                            <input
+                                type="email"
+                                name="email"
+                                class="email"
+                                id="email"
+                                placeholder="Email"
+                                required
+                            />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-angle-double-right"></i>
+                            <input
+                                type="text"
+                                name="subject"
+                                class="subject"
+                                id="subject"
+                                placeholder="Subject"
+                                required
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            cols="30"
+                            rows="5"
+                            class="message"
+                            id="message"
+                            placeholder="Message"
+                            required
+                        ></textarea>
+                        <button class="submit" id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>-->
+        </div>
+
+        <!-----------------JQUERY {https://jquery.com/} [USED IN portfolio.js]----------------->
+        <script src="resources/js/jquery.min.js"></script>
+        <!-----------------MIX IT UP {https://www.kunkalabs.com/mixitup/} [USED IN portfolio.js]----------------->
+        <script src="resources/js/mixitup.min.js"></script>
+        <!-----------------SWIPER JS {https://swiperjs.com/} [USED IN portfolio.js, blog.js]----------------->
+        
+        <!-----------------EMAIL JS {https://www.emailjs.com/} [USED IN contact.js]----------------->
+        <script src="resources/js/email.min.js"></script>
+        <!-----------------ADDITIONAL SCRIPT FOR EMAIL JS----------------->
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_5OMETIDQ2Nm9qBMtaFNz4");
+            })();
+        </script>
+        <!-----------------VANILLA TILT JS {https://micku7zu.github.io/vanilla-tilt.js/}----------------->
+        <script src="resources/js/vanilla-tilt.min.js"></script>
+        <!-----------------ANIME JS {https://animejs.com/} [USED LOCALLY.]----------------->
+        <script src="resources/js/anime.min.js"></script>
+        <!-----------------LOCAL (HOME)----------------->
+        <script src="resources/js/home.js"></script>
+        <!-----------------LOCAL (ABOUT)----------------->
+        <script src="resources/js/about.js"></script>
+        <!-----------------LOCAL (SERVICES)----------------->
+        <script src="resources/js/services.js"></script>
+        <!-----------------LOCAL (PORTFOLIO)----------------->
+        <script src="resources/js/portfolio.js"></script>
+        <!-----------------LOCAL (BLOG)----------------->
+        <script src="resources/js/blog.js"></script>
+        <!-----------------LOCAL (CONTACT)----------------->
+        <script src="resources/js/contact.js"></script>
+        <!-----------------LOCAL (MAIN FILE)----------------->
+        <script src="resources/js/main.js"></script>
+
+        <!-----------------LOCAL (MAIN FILE { USED TO ANIMATE WEBPAGE.})----------------->
+        <script>
+            const animate1 = anime.timeline({
+                targets: ".circle",
+                loop: true,
+                duration: 2000,
+                direction: "alternate",
+                easing: "easeInOutQuad",
+            });
+            animate1.add({
+                translateX: 350,
+            });
+
+            let dot = document.querySelectorAll(".dot");
+            for (let i = 0; i < dot.length; i++) {
+                const ind = dot[i];
+                const animate2 = anime.timeline({
+                    targets: ind,
+                    loop: true,
+                    direction: "alternate",
+                    delay: i * 100,
+                });
+                animate2.add({
+                    scale: 2,
+                });
+            }
+
+            let span = document.querySelectorAll(".content .text span");
+            const animate3 = anime.timeline({
+                targets: span,
+                easing: "easeInOutExpo",
+                delay: anime.stagger(20, { direction: "reverse" }),
+                direction: "reverse",
+                autoplay: false,
+            });
+
+            animate3.add({
+                rotate: () => {
+                    return anime.random(-360, 360);
+                },
+                translateX: () => {
+                    return anime.random(-500, 500);
+                },
+                translateY: () => {
+                    return anime.random(-500, 500);
+                },
+                duration: 3000,
+            });
+
+            const animate4 = anime({
+                targets: ".button",
+                scale: [0, 1],
+                delay: anime.stagger(200, { start: 7000 }),
+                autoplay: false,
+            });
+
+            const animate5 = anime({
+                targets: [
+                    document.querySelectorAll(".info"),
+                    document.querySelectorAll(".inp_field"),
+                    ".message",
+                    ".submit",
+                ],
+                translateY: [50, 0],
+                rotateX: [90, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(300, { start: 1000 }),
+                duration: 750,
+                autoplay: false,
+                easing: "easeOutQuint",
+            });
+            
+            const animate6 = anime({
+                targets: ['.services .t_dummy', '.services .hero-text'],
+                duration: 1000,
+                scaleX: [0, 1],
+                delay: anime.stagger(300, {start: 1000}),
+                autoplay: false,
+            });
+
+            function resize() {
+                if (window.innerWidth <= 632) {
+                    animate5.play();
+                    animate3.play();
+                    animate4.play();
+                    animate6.play();
+                }
+            }
+            resize();
+            window.addEventListener("resize", resize);
+        </script>
+    </body>
+</html>
